@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attr1: MyString
+  attr2: false
+  attr3: 2015-03-03 20:08:28
+  attr4: 1
+  attr5: MyText
+
+two:
+  attr1: MyString
+  attr2: false
+  attr3: 2015-03-03 20:08:28
+  attr4: 1
+  attr5: MyText

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Record Cs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attr1</th>
+      <th>Attr2</th>
+      <th>Attr3</th>
+      <th>Attr4</th>
+      <th>Attr5</th>
+      <th>Attr6</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @record_cs.each do |record_c| %>
+      <tr>
+        <td><%= record_c.attr1 %></td>
+        <td><%= record_c.attr2 %></td>
+        <td><%= record_c.attr3 %></td>
+        <td><%= record_c.attr4 %></td>
+        <td><%= record_c.attr5 %></td>
+        <td><%= record_c.attr6 %></td>
+        <td><%= link_to 'Show', record_c %></td>
+        <td><%= link_to 'Edit', edit_record_c_path(record_c) %></td>
+        <td><%= link_to 'Destroy', record_c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Record c', new_record_c_path %>

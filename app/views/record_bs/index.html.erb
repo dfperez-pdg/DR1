@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Record Bs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attr1</th>
+      <th>Attr2</th>
+      <th>Attr3</th>
+      <th>Attr4</th>
+      <th>Attr5</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @record_bs.each do |record_b| %>
+      <tr>
+        <td><%= record_b.attr1 %></td>
+        <td><%= record_b.attr2 %></td>
+        <td><%= record_b.attr3 %></td>
+        <td><%= record_b.attr4 %></td>
+        <td><%= record_b.attr5 %></td>
+        <td><%= link_to 'Show', record_b %></td>
+        <td><%= link_to 'Edit', edit_record_b_path(record_b) %></td>
+        <td><%= link_to 'Destroy', record_b, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Record b', new_record_b_path %>
